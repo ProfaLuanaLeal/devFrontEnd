@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">   
-    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
 </head>
 <body>
-   <h1>Bem Vindo ao jogo da sua Vida!</h1> 
-   <p>Prepare-se para uma jornada Incrivel que irá muda a sua vida.</p>
-   <button onclick="startgame()">Começar o jogo</button>
+    <h1>Meu sistema de notas</h1>
+    <form action="" id="notaform">
+        <input type="text" id="notaInput" placeholder="Digite sua nota.." required>
+        <input type="date" id="dataInput">
+        <button type="submit">Adicionar Nota</button>
+    </form>
+
+    <!--Mostra a lista comando-->
+    <h1>Notas Registradas</h1>
+    <ul id="listaNotas"></ul>
+
+    <script src="main.js"></script><!--Link para o arquivo externo do javascript-->
+
 </body>
 </html>
