@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Perfil de Ralacionamento</title>
+    <link rel="stylesheet" href="stylecadastro.css">
+</head>
+<body>
+    <h1>Crie seu Perfil</h1>
+        <nav>
+            <a href="#Blog">Blog</a>
+            <a href="#Perfil">Perfil</a>
+            <a href="index.html">Voltar</a>
+        </nav>
+    <div class="container">
+        <form id="perfilform">
+            <input type="text" id="nome" placeholder="Qual é o seu nome?" required>
+            <input type="text" id="apelido" placeholder="Crie seu apelido:" required>
+            <input type="number" id="idade" placeholder="idade" required>
+            <input type="text" id="cidade" placeholder="Qual sua cidade?" required>
+            <input type="number" id="altura" placeholder="Qual sua Altura?" required>
+            <input type="text" id="escolha" placeholder="O que procura?" required>
+
+            <div class="foto-caixa">
+                <input type="file" id="foto"  accept="image/*" 
+                onchange="previewImage(event)" required>
+                <div id="fotoPreview" class="foto-preview"> </div>
+            </div>
+            <textarea id="bio" placeholder="conte um pouco sobre você..." rows="4",
+            required></textarea>
+            <button type="submit">Criar Perfil</button>
+        </form>
+
+    </div>
+    <footer>
+        <p>&copy;2025 Todos direitos ao perfil perfeito</p>
+    </footer>
+</body>
+</html>
