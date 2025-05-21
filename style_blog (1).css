@@ -1,0 +1,63 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('foto.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 20px; 
+}
+
+.post {
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Alinha os itens na coluna */
+    background: #feeaea;
+    margin: 20px 0; /* Espaço em cima e embaixo do post */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    color: #333;
+}
+
+.post img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px 0; /* Espaço em cima e embaixo da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+
+.post-content {
+    display: flex; 
+    flex-direction: column; 
+}
+
+footer {
+    background-color: rgb(247, 22, 45);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Mudado para relativo para evitar sobreposição */
+    bottom: 0;
+    width: 100%;
+}
