@@ -1,0 +1,98 @@
+body, h1, p, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('foto.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+nav {
+    text-align: center; /* Centraliza os links do nav */
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 50px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* Ajusta para header e footer */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Adiciona um pouco de padding */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ocupar toda a largura disponível */
+    max-width: 600px; /* Largura máxima para dispositivos maiores */
+}
+
+input, textarea {
+    margin-bottom: 15px; /* Espaçamento entre campos */
+    padding: 10px;
+    border: 1px solid #fdfbfb;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; /* Ocupar toda a largura do formulário */
+}
+
+textarea {
+    height: 10%; /* Define uma altura fixa para o textarea */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-top: 15px; /* Margem acima do botão */
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: crimson;
+    color: white; /* Adiciona cor ao texto do botão */
+    transition: background-color 0.5s;
+    position: relative; /* Ajusta posição relativa */
+}
+
+button:hover {
+    background-color: #fdfdfd; /* Cor ao passar o mouse */
+}
+
+footer {
+    background-color: rgb(247, 22, 45);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

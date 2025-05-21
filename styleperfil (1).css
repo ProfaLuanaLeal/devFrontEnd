@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('foto.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
+}
+
+nav {
+    text-align: center; /* Centraliza os links do nav */
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 50px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+.foto-preview {
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    background-color: bisque;
+    width: 100px; /* Define largura */
+    height: 100px; /* Define altura */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex; /* Usado para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 25px;
+}
+
+.perfil {
+    background-color: ivory;
+    margin: 50px;
+    padding: 50px;
+    color: crimson;
+    text-align: left;
+}
+
+.perfil p {
+    font-size: 30px; 
+}
+
+footer {
+    background-color: rgb(247, 22, 45);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

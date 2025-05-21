@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Perfil</title>
+    <link rel="stylesheet" href="styleperfil.css">
+</head>
+<body>
+    <body>
+        <h1>Meu Perfil</h1>
+        <nav>
+            <a href="#Blog">Blog</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="index.html">Home</a>
+        </nav>
+        <br>
+        <h1>Perfil de <span id="nome"></span></h1>
+        <div id="fotoPreview" class="foto-preview"></div>
+        
+        <div class="perfil">
+            <p><strong>Apelido:</strong><span id="apelido"></span></p>
+            <p><strong>Idade:</strong><span id="idade"></span></p>
+            <p><strong>Cidade:</strong><span id="cidade"></span></p>
+            <p><strong>Altura:</strong><span id="altura"></span></p>
+            <p><strong>O que você procura:</strong><span id="escolha"></span></p>
+            <p><strong>Bio:</strong><span id="bio"></span></p>
+        </div>
+        
+    </body>
+    <footer>
+        <p>&copy;2025 Todos direitos ao perfil perfeito</p>
+    </footer>
+    <script>
+        window.onload = function() {
+            const nome = localStorage.getItem('nome');
+            const apelido = localStorage.getItem('apelido');
+            const idade = localStorage.getItem('idade');
+            const cidade = localStorage.getItem('cidade');
+            const altura = localStorage.getItem('altura');
+            const escolha = localStorage.getItem('escolha');
+            const bio = localStorage.getItem('bio');
+            const foto = localStorage.getItem('foto');
+
+            document.getElementById('nome').textContent = nome || 'Não informado';
+            document.getElementById('apelido').textContent = apelido || 'Não informado';
+            document.getElementById('idade').textContent = idade || 'Não informado';
+            document.getElementById('cidade').textContent = cidade || 'Não informado';
+            document.getElementById('altura').textContent = altura || 'Não informado';
+            document.getElementById('escolha').textContent = escolha || 'Não informado';
+            document.getElementById('bio').textContent = bio || 'Não informado';
+
+            if (foto) {
+                const img = document.createElement('img');
+                img.src = foto;
+                document.getElementById('fotoPreview').appendChild(img);
+            }
+        }
+    </script>
+    </script>
+</body>
+</html>
